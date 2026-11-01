@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zaytoun Grill – Fire-cooked Levantine food</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFAF6;--ink:#1B2340;--card:#fff;--line:#d9d4c4;--muted:#575d75;--sun:#F2B632;--sunink:#1B2340;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12172B;--ink:#F3EFE4;--card:#1B2340;--line:#343c63;--muted:#aab0c8}}
+:root[data-theme="dark"]{--bg:#12172B;--ink:#F3EFE4;--card:#1B2340;--line:#343c63;--muted:#aab0c8}
+*{box-sizing:inherit}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.05;margin:0}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:var(--sun);color:var(--sunink)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-weight:500}
+nav b{font:800 22px "Bricolage Grotesque",sans-serif}nav a{color:inherit;text-decoration:none;margin-left:18px}
+.hero{padding:48px 0 72px}
+.hero h1{font-size:clamp(44px,10vw,92px);font-weight:800;max-width:11ch}
+.hero p{max-width:34ch;font-size:19px;margin:20px 0 28px}
+.btn{display:inline-block;background:var(--sunink);color:#FBFAF6;padding:14px 26px;border-radius:999px;font-weight:500;text-decoration:none;border:0;font-size:17px;cursor:pointer;font-family:inherit}
+.btn:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+section{padding:56px 0}
+h2{font-size:clamp(30px,6vw,44px);margin-bottom:28px}
+.menu{display:grid;gap:0 56px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.item{display:flex;gap:12px;align-items:baseline;padding:14px 0;border-bottom:1px dotted var(--line)}
+.item div{flex:1}.item h3{font-size:19px;font-weight:500}.item p{margin:2px 0 0;color:var(--muted);font-size:15px}
+.price{font-weight:500}
+.info{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.hours{list-style:none;padding:0;margin:0}.hours li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)}
+form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:12px}
+label{font-size:15px;color:var(--muted)}
+input,select{width:100%;padding:12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+#ok{margin:0;font-weight:500}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:15px}
+header{position:relative;overflow:hidden}#gl{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}header .wrap{position:relative;z-index:1}.menu{gap:24px}.menu>div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:8px 24px;box-shadow:0 24px 44px -28px rgba(20,25,50,.55)}.item:last-child{border-bottom:0}#f{box-shadow:0 24px 44px -28px rgba(20,25,50,.55)}.menu>div,#f{transition:transform .2s ease-out}.stats{background:var(--ink);color:var(--bg)}.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;padding:24px 20px}.stats b{font:800 32px 'Bricolage Grotesque',sans-serif;display:block}.stats span{opacity:.75;font-size:15px}.feat,.rev{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.feat i{font-style:normal;display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--sun);font-size:26px;margin-bottom:12px}.feat h3{font-size:21px;margin-bottom:6px}.feat p{margin:0;color:var(--muted)}.rev{margin-top:36px}.rev figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px}.rev figure::before{content:'★★★★★';color:#D99A00;letter-spacing:2px;display:block;margin-bottom:8px}.rev blockquote{margin:0 0 10px}.rev figcaption{color:var(--muted);font-size:15px}.faq details{border-bottom:1px solid var(--line);padding:16px 0}.faq summary{cursor:pointer;font:500 19px 'Bricolage Grotesque',sans-serif}.faq summary:focus-visible{outline:3px solid var(--ink);outline-offset:3px}.faq p{margin:10px 0 0;color:var(--muted);max-width:60ch}.cta{background:var(--sun);color:var(--sunink);text-align:center}.cta h2{margin-bottom:20px}</style></head><body>
+<header><canvas id='gl' aria-hidden='true'></canvas><div class='wrap'>
+<nav><b>Zaytoun</b><span><a href="#menu">Menu</a><a href="#visit">Visit</a></span></nav>
+<div class="hero"><h1>Cooked over fire. Shared at the table.</h1>
+<p>Levantine grills, fresh-baked bread and mezze, made daily in the heart of the city.</p>
+<a class="btn" href="#visit">Reserve a table</a></div></div></header>
+
+<div class='stats'><div class='wrap'><div><b>4.8</b><span>average guest rating</span></div><div><b>12 years</b><span>grilling over charcoal</span></div><div><b>40+</b><span>dishes made fresh daily</span></div><div><b>7 days</b><span>open every week</span></div></div></div><section id="menu"><div class="wrap"><h2>Today’s menu</h2>
+<div class="menu">
+<div><div class="item"><div><h3>Mixed grill for two</h3><p>Lamb kofta, chicken shish, grilled vegetables</p></div><span class="price">$34</span></div>
+<div class="item"><div><h3>Chicken shawarma plate</h3><p>Garlic sauce, pickles, rice</p></div><span class="price">$16</span></div>
+<div class="item"><div><h3>Lamb kofta wrap</h3><p>Tahini, parsley, sumac onions</p></div><span class="price">$13</span></div></div>
+<div><div class="item"><div><h3>Hummus with warm bread</h3><p>Olive oil, paprika, chickpeas</p></div><span class="price">$8</span></div>
+<div class="item"><div><h3>Fattoush salad</h3><p>Crisp greens, toasted pita, pomegranate</p></div><span class="price">$9</span></div>
+<div class="item"><div><h3>Knafeh</h3><p>Sweet cheese pastry, served hot</p></div><span class="price">$7</span></div></div>
+</div></div></section>
+
+<section><div class='wrap'><h2>Why guests come back</h2><div class='feat'><div><i>🔥</i><h3>Fire-grilled to order</h3><p>Real charcoal heat, never pre-cooked, so every plate arrives hot and smoky.</p></div><div><i>🥖</i><h3>Baked in-house</h3><p>Fresh bread out of the oven all day, served warm to every table.</p></div><div><i>🌿</i><h3>Fresh, local produce</h3><p>Herbs and vegetables from nearby farms, delivered each morning.</p></div></div><div class='rev'><figure><blockquote>“The mixed grill is unreal. We booked online in under a minute.”</blockquote><figcaption>Lina R.</figcaption></figure><figure><blockquote>“Warm bread, great service, and the knafeh is a must.”</blockquote><figcaption>Daniel K.</figcaption></figure><figure><blockquote>“Our go-to for family dinners. Everyone finds something they love.”</blockquote><figcaption>Maya S.</figcaption></figure></div></div></section><section id="visit"><div class="wrap info">
+<div><h2>Visit us</h2><p>24 Olive Street, Downtown</p>
+<ul class="hours"><li><span>Mon–Thu</span><span>12:00–22:00</span></li><li><span>Fri–Sat</span><span>12:00–23:30</span></li><li><span>Sunday</span><span>13:00–21:00</span></li></ul></div>
+<form id="f"><h3>Book a table</h3>
+<div><label for="n">Name</label><input id="n" required></div>
+<div><label for="g">Guests</label><select id="g"><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div>
+<div><label for="t">Date and time</label><input id="t" type="datetime-local" required></div>
+<button class="btn" type="submit">Request booking</button><p id="ok" role="status"></p></form>
+</div></section>
+<section><div class='wrap'><h2>Good to know</h2><div class='faq'><details><summary>Do you take large group bookings?</summary><p>Yes, we seat groups of up to 20. Send a booking request above, or contact us at least 48 hours ahead.</p></details><details><summary>Do you have vegetarian and vegan dishes?</summary><p>Plenty: hummus, fattoush, falafel, grilled vegetables and more. Just tell us when you book.</p></details><details><summary>Is there parking nearby?</summary><p>Free parking is available behind the restaurant after 17:00.</p></details></div></div></section><section class='cta'><div class='wrap'><h2>Hungry? Your table is waiting.</h2><a class='btn' href='#visit'>Reserve a table</a></div></section><footer><div class="wrap">© Zaytoun Grill. Sample project for portfolio use.</div></footer>
+<script>
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();
+document.getElementById("ok").textContent="Thanks "+document.getElementById("n").value+", we’ve received your request and will confirm shortly.";this.reset();});
+</script><script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script><script>(function(){var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;function tilt(el){if(rm||!matchMedia('(hover: hover)').matches)return;el.addEventListener('pointermove',function(e){var b=el.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;el.style.transform='perspective(900px) rotateX('+(-y*6)+'deg) rotateY('+(x*8)+'deg)'});el.addEventListener('pointerleave',function(){el.style.transform=''})}document.querySelectorAll('.menu>div,#f').forEach(tilt);if(!window.THREE)return;try{var c=document.getElementById('gl'),R=new THREE.WebGLRenderer({canvas:c,alpha:true,antialias:true}),S=new THREE.Scene(),C=new THREE.PerspectiveCamera(40,1,.1,100),G=new THREE.Group(),mx=0,my=0,t=0,i,o,ol=[];R.setPixelRatio(Math.min(devicePixelRatio,2));C.position.set(0,2,11);C.lookAt(0,0,0);S.add(new THREE.AmbientLight(0xffffff,.75));var L=new THREE.DirectionalLight(0xffffff,.9);L.position.set(4,8,6);S.add(L);S.add(G);function M(h,r){return new THREE.MeshStandardMaterial({color:h,roughness:r})}G.add(new THREE.Mesh(new THREE.CylinderGeometry(2.5,1.9,.3,64),M(0xfbfaf6,.3)));var rim=new THREE.Mesh(new THREE.TorusGeometry(2.2,.07,16,64),M(0x1b2340,.4));rim.rotation.x=Math.PI/2;rim.position.y=.16;G.add(rim);for(i=0;i<8;i++){o=new THREE.Mesh(new THREE.SphereGeometry(.34,28,20),M(i%3?0x4b5a22:0x2e3a14,.45));o.scale.y=1.3;ol.push(o);G.add(o)}function size(){var w=c.clientWidth,h=c.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();var d=w>720;G.position.set(d?3.6:2,d?-.2:-1.6,0);G.scale.setScalar(d?1:.8)}size();addEventListener('resize',size);addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});function f(){t+=.012;G.rotation.y=t*.5+mx*.8;G.rotation.x=.45+my*.3;ol.forEach(function(q,k){var a=t+k/8*6.283;q.position.set(Math.cos(a)*3.1,.9+Math.sin(t*2+k)*.25,Math.sin(a)*3.1)});R.render(S,C);if(!rm)requestAnimationFrame(f)}f()}catch(e){}})();</script></body></html>
